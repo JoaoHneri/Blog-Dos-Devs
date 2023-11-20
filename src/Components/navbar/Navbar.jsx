@@ -8,13 +8,23 @@ const Navbar = () => {
         </NavLink>
         <ul className="links_list">
             <li>
-        <NavLink to="/Home">
+        <NavLink to="/">
             Home
         </NavLink>
             </li>
             <li>
+        <NavLink to="/Login">
+            Entrar
+        </NavLink>
+            </li>
+            <li>
+        <NavLink to="/register">
+            Registrar
+        </NavLink>
+            </li>
+            <li>
         <NavLink to="/About">
-            About
+            Sobre
         </NavLink>
             </li>
         </ul>
