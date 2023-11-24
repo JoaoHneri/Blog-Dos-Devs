@@ -81,7 +81,7 @@ export const useAuth = () => {
       if (error.message.includes("user-not-found")) {
         systemErrorMessage = "Usuário não encontrado.";
       } else if (error.message.includes("invalid-login-credentials")) {
-        systemErrorMessage = "Senha incorreta ou email incorretos.";
+        systemErrorMessage = "Email ou Senha incorretos.";
       }
 
       console.log(systemErrorMessage);
