@@ -47,7 +47,7 @@ const Login = () => {
           <span>Senha:</span>
           <input type="password" placeholder='Digite sua senha' name='displayPassword' required value={password} onChange={(e)=> setPassword(e.target.value)}/>
         </label>
-       {!loading && <button className='btn'>Cadastrar</button>}
+       {!loading && <button className='btn'>Entrar</button>}
        {loading && <button className='btn' disabled>Aguarde...</button>}
         {error && <p className='error'> {error}</p>}
       </form>
