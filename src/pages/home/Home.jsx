@@ -2,6 +2,7 @@ import "./Home.css";
 import { useNavigate, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useFetchDocuments } from "../../hooks/useFetchDocument.";
+import PostDetails from "../../Components/PostDetails/PostDetails";
 
 const Home = () => {
   const [search, setSearch] = useState("");
@@ -25,7 +26,7 @@ const Home = () => {
       <div>
         {loading && <p>Carregando...</p>}
         {posts && posts.map((post) => (
-          <h3>{post.title}</h3>
+          <PostDetails post={post} key={post.id}/>
         ))}
         {posts && posts.length === 0 && (
           <div className="noposts">
