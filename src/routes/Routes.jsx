@@ -10,6 +10,7 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import { useEffect, useState } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { onAuthStateChanged } from "firebase/auth";
+import Search from "../pages/Search/Search";
 const Router = () => {
   const [user, setUser] = useState(undefined);
   const { auth } = useAuth();
@@ -29,6 +30,7 @@ const Router = () => {
             <Routes>
               <Route exact path="/" Component={Home} />
               <Route exact path="/About" Component={About} />
+              <Route exact path="/search" Component={Search} />
               <Route exact path="/login" Component={!user ? Login : Home} />
               <Route
                 exact
