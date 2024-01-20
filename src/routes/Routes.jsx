@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { onAuthStateChanged } from "firebase/auth";
 import Search from "../pages/Search/Search";
+import Post from "../pages/PostIndividual/Post";
 const Router = () => {
   const [user, setUser] = useState(undefined);
   const { auth } = useAuth();
@@ -31,6 +32,7 @@ const Router = () => {
               <Route exact path="/" Component={Home} />
               <Route exact path="/About" Component={About} />
               <Route exact path="/search" Component={Search} />
+              <Route exact path="/posts/:id" Component={Post} />
               <Route exact path="/login" Component={!user ? Login : Home} />
               <Route
                 exact
