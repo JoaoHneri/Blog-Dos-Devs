@@ -1,5 +1,21 @@
 .post_container {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .post_container .body-content{
+    width: 900px;
+    margin: 15px;
+
+}
+.body-content p{
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: normal;
+
 }
 
 .post_container img{

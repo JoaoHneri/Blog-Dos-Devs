@@ -1,5 +1,8 @@
 .post_detail{
 margin-bottom: 2em;
+box-shadow: 11px 10px 13px 0px rgba(0,0,0,0.37);
+-webkit-box-shadow: 11px 10px 13px 0px rgba(0,0,0,0.37);
+-moz-box-shadow: 11px 10px 13px 0px rgba(0,0,0,0.37);
 }
 
 .post_detail img{
@@ -15,6 +18,14 @@ margin-bottom: 2em;
     display: flex;
 }
 
+.postContent{
+    margin-left: 15px;
+}
+.tagsD{
+    display: flex;
+    flex-direction: column;
+}
+
 .tags p{
     margin-right: .5em;
 }
@@ -27,4 +38,9 @@ margin-bottom: 2em;
     color: #444;
     font-size: 0.8em;
     margin-bottom: 1em;
+}
+
+.linkbtn{
+    margin-bottom: 20px;
+    max-width: 30px;
 }

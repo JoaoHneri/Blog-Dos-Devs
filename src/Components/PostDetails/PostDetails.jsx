@@ -6,17 +6,22 @@ const PostDetails = ({ post }) => {
   return (
     <div className="post_detail">
       <img src={post.image} alt={post.title} />
-      <h2>{post.title}</h2>
+      <div className="postContent">
+              <h2>{post.title}</h2>
       <p>{post.createdBy}</p>
-      <div className="tags">
+      <div className="tagsD">
+        <div className="tags">
         {post.tags.map((tag) => (
           <p className="createdby" key={tag}>
             <span>#</span>
             {tag}
           </p>
-        ))}
+        ))} 
       </div>
-      <Link to={`/posts/${post.id}`} className="btn btn-outline">Ler</Link>
+      <Link to={`/posts/${post.id}`} className="btn btn-outline linkbtn">Ler</Link>
+      </div>
+      </div>
+
     </div>
   );
 };
